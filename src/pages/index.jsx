@@ -1,12 +1,17 @@
+import Content from "@/layouts/Content"
+import Footer from "@/layouts/Footer"
+import Header from "@/layouts/Header"
 import { Head } from "minista"
 
 export default function () {
   return (
     <>
-      <Head>
-        <title>Hello!</title>
+      <Head htmlAttributes={{ lang: "en" }}>
+        <title>StreamVibe | Home</title>
       </Head>
-      <h1>Hello!</h1>
+      <Header />
+      <Content />
+      <Footer />
     </>
   )
 }
