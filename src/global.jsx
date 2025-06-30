@@ -5,7 +5,7 @@ import Header from "@/layouts/Header"
 import { Head } from "minista"
 
 export default function (props) {
-  const { children, title } = props
+  const { children, title, url } = props
   return (
     <>
       <Head htmlAttributes={{ lang: "en" }}>
@@ -30,7 +30,7 @@ export default function (props) {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <Header />
+      <Header url={url} />
       <Content>{children}</Content>
       <Footer />
     </>
