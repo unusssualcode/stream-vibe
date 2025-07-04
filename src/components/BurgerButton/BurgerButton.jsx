@@ -2,7 +2,7 @@ import classNames from "classnames"
 import "./BurgerButton.scss"
 
 const BurgerButton = (props) => {
-  const { className } = props
+  const { className, extraAttrs } = props
 
   const title = "Open menu"
 
@@ -10,8 +10,9 @@ const BurgerButton = (props) => {
     <button
       className={classNames(className, "burger-button")}
       type="button"
-      aria-label="Open menu"
-      title="Open menu"
+      aria-label={title}
+      title={title}
+      {...extraAttrs}
     >
       <svg
         className="burger-button__svg"

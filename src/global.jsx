@@ -10,7 +10,7 @@ export default function (props) {
     <>
       <Head htmlAttributes={{ lang: "en" }}>
         <title>StreamVibe | {title}</title>
-        <script src="/src/main.js" />
+        <script type="module" src="/src/main.js" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
