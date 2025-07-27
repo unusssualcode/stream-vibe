@@ -17,6 +17,9 @@
       border-color: var(--color-black-15);
     }
   }
+  &.is-fixed {
+    position: fixed;
+  }
 
   &__inner {
     display: flex;
